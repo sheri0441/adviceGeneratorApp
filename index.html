@@ -2,27 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="flex f-j-c f-a-c">
+  <main class="flex f-a-c">
+    <h3>Advice #<span id="number"></span></h3>
+    <p id="advice"></p>
+    <div class="line flex f-a-c">
+      <hr>
+      <div class="dot_wrapper flex">
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <hr>
+    </div>
+    <div class="btn flex f-a-c f-j-c">
+      <div class="dice flex f-a-c">
+        <div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <div class="point"></div>
+        <div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+      </div>
+    </div>
+     
+  </main> 
+  <script src="script.js"></script>
 </body>
 </html>
