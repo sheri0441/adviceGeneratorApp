@@ -1,0 +1,95 @@
+:root{
+    --p-clr-cyan:hsl(193, 38%, 86%);
+    --p-clr-green: hsl(150, 100%, 66%);
+    --n-clr-blue:hsl(217, 19%, 38%);
+    --n-clr-blue-D:hsl(217, 19%, 24%);
+    --n-clr-D-blue:hsl(218, 23%, 16%);
+    --fs-q: 1.75rem;
+    --fw-b:800;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--n-clr-D-blue);
+    font-family: "Manrope", "sans-serif";
+    font-weight: 800;   
+    height: 100vh;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+}
+.f-j-c{
+    justify-content: center;
+}
+.f-a-c{
+    align-items: center;
+}
+main{
+    max-width: 420px;
+    background-color: var(--n-clr-blue);
+    padding: 5px;
+    border-radius: 5px;
+    flex-direction: column;
+    margin: 10px;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    letter-spacing: 0.25rem;
+    color: var(--p-clr-green);
+    font-weight: 800;
+    text-align: center;
+}
+hr{
+    width: 40%;
+    border: var(--p-clr-cyan) solid 0.5px;
+}
+.line{
+    width: 100%;
+
+}
+.dot{
+    background-color: var(--p-clr-cyan);
+    width: 5px;
+    height: 10px;
+    border-radius: 2px;
+    margin: 0 2px;
+}
+.btn{
+    background-color: var(--p-clr-green);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-bottom: -30px;
+}
+.dice{
+    background-color: var(--n-clr-D-blue);
+    justify-content: space-evenly;
+    width: 25px;
+    height: 25px;
+    border: 2px;
+    padding: 2px;
+    border-radius: 3px;
+}
+.point{
+    background-color: var(--p-clr-green);
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 1px;
+}
+.point + .point {
+    margin-top: 8px;
+}
+.btn:hover{
+    box-shadow: var(--p-clr-green) 0 0 20px 2px;
+
+}
+#advice{
+    text-align: center;
+    color: var(--p-clr-cyan);
+}
