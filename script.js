@@ -11,15 +11,5 @@ async function giveAdvice ()  {
     adbviceBox.textContent = advice;
 }
 
-
-// Promise.resolve(fetch("https://api.adviceslip.com/advice")
-// .then(res => res.json()).then(data => console.log(data.slip.advice)))
-
-// const giveAdvice = () => {
-//     var advice = JSON.parse(fetch("https://api.adviceslip.com/advice")
-//             .then(res => res.json()));
-// }
-
-
 btn.addEventListener("click",  giveAdvice);
 giveAdvice();
